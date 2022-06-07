@@ -1,6 +1,9 @@
 // import ScrollBox from "./RefEx/ScrollBox";
 // import IterationSample from "./RepeatEx/IiterationSample";
 
+import { ColorProvider } from "./contextEx/contexts/color";
+import ColorBox from "./contextEx/components/colorBox";
+
 // import Info3 from "./useReducer/Info3";
 
 // import Counter2 from "./useReducer/Counter2";
@@ -9,7 +12,7 @@
 // import Counter from "./useStateEx/Counter";
 // import Info from "./useStateEx/Info";
 // import { useState } from "react";
-import Info2 from "./customHooksEx/Info2";
+// import Info2 from "./customHooksEx/Info2";
 // import Average2 from "./useCallbackEx/Average2";
 // import Average3 from "./useRefEx/Average3";
 // import Average from "./useMemoEx/Average";
@@ -36,7 +39,12 @@ const App = () => {
     // <Info3 />
     // <Average2 />
     // <Average3 />
-    <Info2 />
+    // <Info2 />0
+    <ColorProvider>
+      <div>
+        <ColorBox />
+      </div>
+    </ColorProvider>
   );
 };
 
